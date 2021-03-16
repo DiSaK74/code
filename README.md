@@ -17,7 +17,7 @@ codigos Javascript y Typescript
 # Clonado profundo array bidimensionales
     this.listaTemporal = JSON.parse(JSON.stringify(this.lista)); // Clonado profundo para matrices bidimensionales
     
-    https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/
+https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/
     
 # Mostrar un json usando *ngFor
 
