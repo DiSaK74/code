@@ -37,3 +37,22 @@ https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f
       </span>
 
 https://stackoverflow.com/questions/35647365/how-to-display-json-object-using-ngfor
+
+# Asignar valores a campos no databinding
+Por ejemplo:
+
+    <div class="dropdown-menu">
+        <button class="btn btn-link dropdown-item" [attr.data-column]="i" (click)="mostrar()"
+            *ngFor="let col of cols; let i=index">{{col}}</button>
+        <button class="btn btn-link dropdown-item">Columna2</button>
+    </div>
+
+      <div class="dropdown-menu">
+          <button class="btn btn-link dropdown-item" data-column="0">Name</button>
+          <button class="btn btn-link dropdown-item" data-column="1">Position</button>
+          <button class="btn btn-link dropdown-item" data-column="2">Office</button>
+          <button class="btn btn-link dropdown-item" data-column="3">Age</button>
+          <button class="btn btn-link dropdown-item" data-column="4">Start date</button>
+          <button class="btn btn-link dropdown-item" data-column="5">Salary</button>
+          <button class="btn btn-link dropdown-item">Columna2</button>
+      </div>
