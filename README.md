@@ -56,3 +56,10 @@ Por ejemplo:
           <button class="btn btn-link dropdown-item" data-column="5">Salary</button>
           <button class="btn btn-link dropdown-item">Columna2</button>
       </div>
+
+# Solucion compatibilidad Angular 7 vs @ng-select
+
+Version 2.9.1 es compatible con Angular 7
+Solución: npm i @ng-select/ng-select@2.9.1
+
+https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
