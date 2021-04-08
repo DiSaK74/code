@@ -67,17 +67,17 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
 # CLI Angular
 
-*ng g m features    
+*ng g m features*    
 
       /features
       CREATE src/app/features/features.module.ts (191 bytes)
 
-*ng g m features/alerts --routing
+*ng g m features/alerts --routing*
 
       CREATE src/app/features/alerts/alerts-routing.module.ts (249 bytes)
       CREATE src/app/features/alerts/alerts.module.ts (280 bytes)
       
-*ng g c features/alerts/pages/alarm 
+*ng g c features/alerts/pages/alarm* 
 
       CREATE src/app/features/alerts/pages/alarm/alarm.component.html (20 bytes)
       CREATE src/app/features/alerts/pages/alarm/alarm.component.spec.ts (621 bytes)
@@ -85,7 +85,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       CREATE src/app/features/alerts/pages/alarm/alarm.component.scss (0 bytes)     
       UPDATE src/app/features/alerts/alerts.module.ts (358 bytes)      
       
-**ng g m features/alerts/pages/analysis -m=app --route analysis
+**ng g m features/alerts/pages/analysis -m=app --route analysis**
 
       CREATE src/app/features/alerts/pages/analysis/analysis-routing.module.ts (352 bytes)
       CREATE src/app/features/alerts/pages/analysis/analysis.module.ts (363 bytes)
