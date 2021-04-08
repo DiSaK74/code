@@ -63,3 +63,34 @@ Version 2.9.1 es compatible con Angular 7
 Solución: npm i @ng-select/ng-select@2.9.1
 
 https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
+
+
+# CLI Angular
+
+ng g m features    
+
+      /features
+      CREATE src/app/features/features.module.ts (191 bytes)
+
+ng g m features/alerts --routing
+
+      CREATE src/app/features/alerts/alerts-routing.module.ts (249 bytes)
+      CREATE src/app/features/alerts/alerts.module.ts (280 bytes)
+      
+ng g c features/alerts/pages/alarm 
+
+      CREATE src/app/features/alerts/pages/alarm/alarm.component.html (20 bytes)
+      CREATE src/app/features/alerts/pages/alarm/alarm.component.spec.ts (621 bytes)
+      CREATE src/app/features/alerts/pages/alarm/alarm.component.ts (272 bytes)     
+      CREATE src/app/features/alerts/pages/alarm/alarm.component.scss (0 bytes)     
+      UPDATE src/app/features/alerts/alerts.module.ts (358 bytes)      
+      
+ng g m features/alerts/pages/analysis -m=app --route analysis
+
+      CREATE src/app/features/alerts/pages/analysis/analysis-routing.module.ts (352 bytes)
+      CREATE src/app/features/alerts/pages/analysis/analysis.module.ts (363 bytes)
+      CREATE src/app/features/alerts/pages/analysis/analysis.component.html (23 bytes)
+      CREATE src/app/features/alerts/pages/analysis/analysis.component.spec.ts (642 bytes)
+      CREATE src/app/features/alerts/pages/analysis/analysis.component.ts (284 bytes)
+      CREATE src/app/features/alerts/pages/analysis/analysis.component.scss (0 bytes)
+      UPDATE src/app/app-routing.module.ts (374 bytes)
