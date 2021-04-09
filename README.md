@@ -94,3 +94,12 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       CREATE src/app/features/alerts/pages/analysis/analysis.component.ts (284 bytes)
       CREATE src/app/features/alerts/pages/analysis/analysis.component.scss (0 bytes)
       UPDATE src/app/app-routing.module.ts (374 bytes)
+      
+*ng g m products/product — flat -m app.module*
+
+      de forma que queremos que NO nos cree otra carpeta products (ya tenemos una en el proyecto) por eso ponemos — flat
+      -m app.module expresa que queremos vincular el módulo recién creado con AppModule
+      
+*ng g m shared/shared — flat -m products/product.module*
+
+      -m app.module expresa que queremos vincular el módulo recién creado con product/product.module
