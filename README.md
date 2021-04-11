@@ -97,8 +97,9 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       
 *ng g m products/product — flat -m app.module*
 
-      de forma que queremos que NO nos cree otra carpeta products (ya tenemos una en el proyecto) por eso ponemos — flat
-      -m app.module expresa que queremos vincular el módulo recién creado con AppModule
+      — flat: NO nos cree otra carpeta products (ya tenemos una en el proyecto)
+      
+      -m app.module: expresa que queremos vincular el módulo recién creado con AppModule
       
 *ng g m shared/shared — flat -m products/product.module*
 
