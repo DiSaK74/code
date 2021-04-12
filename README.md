@@ -104,3 +104,11 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 *ng g m shared/shared — flat -m products/product.module*
 
       -m app.module expresa que queremos vincular el módulo recién creado con product/product.module
+
+**ng g c modules/assets-management/views/installation-management -m modules/assets-management/assets-management.module**
+
+      CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.html (38 bytes)
+      CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.spec.ts (741 bytes)
+      CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.ts (337 bytes)
+      CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.scss (0 bytes)
+      UPDATE src/app/modules/assets-management/assets-management.module.ts (2220 bytes)
