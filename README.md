@@ -112,3 +112,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.ts (337 bytes)
       CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.scss (0 bytes)
       UPDATE src/app/modules/assets-management/assets-management.module.ts (2220 bytes)
+
+# Descomposicion de un array en elementos 
+
+      const data = { ...usuario };
