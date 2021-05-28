@@ -31,11 +31,28 @@ codigos Javascript y Typescript
       obj.d = 4;
       alert(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
       alert(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
+      
+      Esta manera de copiar un objeto es mucho más corta que let objCopy = Object.assign({}, obj); 
+      o para un array let arrCopy = Object.assign([], arr); por lo que preferimos usarla siempre que podemos.
     
 # Clonado profundo array bidimensionales
     this.listaTemporal = JSON.parse(JSON.stringify(this.lista)); // Clonado profundo para matrices bidimensionales
     
-https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/
+https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/    
+    
+# Operador rest/spread
+
+      Cuando veamos "..." en el código, son los parámetros rest o el operador spread.
+      Hay una manera fácil de distinguir entre ellos:
+
+            Cuando ... se encuentra al final de los parámetros de una función, son los “parámetros rest” y recogen el resto de la lista de argumentos en un array.
+            Cuando ... está en el llamado de una función o similar, se llama “operador spread” y expande un array en una lista.
+            
+      Patrones de uso:
+      
+            Los parámetros rest son usados para crear funciones que acepten cualquier número de argumentos.
+            El operador spread es usado para pasar un array a funciones que normalmente requieren una lista de muchos argumentos.
+    
     
 # Mostrar un json usando *ngFor
 
