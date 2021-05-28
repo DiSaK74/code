@@ -14,6 +14,24 @@ codigos Javascript y Typescript
     // this.listaTemporal = this.lista; // Esto es paso por referencia y no es lo que queremos
     this.listaTemporal = [...this.lista]; // Clonado para arrays
     
+    Otro ejemplo
+    ------------
+      let obj = { a: 1, b: 2, c: 3 };
+
+      let objCopy = { ...obj }; // separa el objeto en una lista de parámetros
+                                // luego devuelve el resultado en un nuevo objeto
+
+      // ¿tienen los objetos el mismo contenido?
+      alert(JSON.stringify(obj) === JSON.stringify(objCopy)); // true
+
+      // ¿son iguales los objetos?
+      alert(obj === objCopy); // false (no es la misma referencia)
+
+      // modificando el objeto inicial no modifica la copia:
+      obj.d = 4;
+      alert(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
+      alert(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
+    
 # Clonado profundo array bidimensionales
     this.listaTemporal = JSON.parse(JSON.stringify(this.lista)); // Clonado profundo para matrices bidimensionales
     
