@@ -148,7 +148,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       CREATE src/app/modules/assets-management/views/installation-management/installation-management.component.scss (0 bytes)
       UPDATE src/app/modules/assets-management/assets-management.module.ts (2220 bytes)
       
-**ng g c modules\widgets-home\components\widget-nodes -m modules\widgets-home\widgets-home.module.ts
+**ng g c modules\widgets-home\components\widget-nodes -m modules\widgets-home\widgets-home.module.ts**
 
       CREATE src/app/modules/widgets-home/components/widget-nodes/widget-nodes.component.html (27 bytes)
       CREATE src/app/modules/widgets-home/components/widget-nodes/widget-nodes.component.spec.ts (664 bytes)     
