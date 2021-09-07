@@ -160,6 +160,6 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
       const data = { ...usuario };
       
-# Cambiar a un brach anterior (sin afectar los cambios del brach anterior)
+# Cambiar a un brach anterior (sin afectar los cambios del brach actual)
 
       git reset --hard 78edd41fbe51c5b2a4e6016ebc10b68eb6824e53
