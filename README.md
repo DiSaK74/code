@@ -176,3 +176,5 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       Desde la libreria
       npm run buildlib --watch
       
+      Fuente: https://dev.to/dontry/using-npm-link-in-angular9-11ie
+      
