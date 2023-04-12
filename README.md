@@ -202,3 +202,10 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       let hora = this.moment(element.startTime).hour();
       let minute = this.moment(element.startTime).minute();
       element.startTime = this.moment(element.startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format()
+      
+      <div>
+        {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format :
+        loadInterval.id ? getOffset(info.mappingToDTO, loadInterval[info.mappingToDTO]) : null) : '-' }}
+        <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format : loadInterval.id ? '0120' : null) : '-' }}  -->
+        <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format) : '-' }}  -->
+      </div>
