@@ -183,7 +183,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
       let dateTemp = moment().tz('Asia/Jerusalem').format();
       
-*Hora UTC "2023-04-12T17:37:02.000Z"*
+*Hora actual de Israel en UTC "2023-04-12T17:37:02.000Z"*
 
       value = new Date(dateTemp).toISOString()
       
@@ -194,3 +194,11 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       value = moment(startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format();
       value = new Date(value).toLocaleString(this.jsonBuild.locale, {timeZone: this.jsonBuild.timeZone});
       value = new Date(value);
+      
+      let destinationFormat = moment(element.endDate).tz(this.jsonBuild.timeZone).set("hour", 23).set("minute", 59).set("second", 59).format();
+      
+      element.startDate = destinationFormat.substring(0, 11) + '00:00:00' + destinationFormat.substring(19, 26)
+      element.endDate = this.moment(element.endDate).format().substring(0, 11) + '23:59:59' + destinationFormat.substring(19, 26)
+      let hora = this.moment(element.startTime).hour();
+      let minute = this.moment(element.startTime).minute();
+      element.startTime = this.moment(element.startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format()
