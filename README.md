@@ -179,15 +179,15 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       Fuente: https://dev.to/dontry/using-npm-link-in-angular9-11ie
       
 # Fechas
-*Hora actual en Israel "2023-04-12T20:37:02+03:00"
+*Hora actual en Israel "2023-04-12T20:37:02+03:00"*
 
       let dateTemp = moment().tz('Asia/Jerusalem').format();
       
-*Hora UTC "2023-04-12T17:37:02.000Z" 
+*Hora UTC "2023-04-12T17:37:02.000Z"*
 
       value = new Date(dateTemp).toISOString()
       
-*Otras funciones
+*Otras funciones*
 
       let hora = moment(value).hour();
       let minute = moment(value).minute();
