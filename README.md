@@ -180,10 +180,15 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       
 # Fechas
 *Hora actual en Israel "2023-04-12T20:37:02+03:00"
+
       let dateTemp = moment().tz('Asia/Jerusalem').format();
+      
 *Hora UTC "2023-04-12T17:37:02.000Z" 
+
       value = new Date(dateTemp).toISOString()
+      
 *Otras funciones
+
       let hora = moment(value).hour();
       let minute = moment(value).minute();
       value = moment(startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format();
