@@ -212,3 +212,5 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
 # Test
       ng test --progress front-spa-fln
+      
+      Nota: front-spa-fln es el nombre que aparece en angular.json
