@@ -209,3 +209,6 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
         <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format : loadInterval.id ? '0120' : null) : '-' }}  -->
         <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format) : '-' }}  -->
       </div>
+
+# Test
+      ng test --progress front-spa-fln
