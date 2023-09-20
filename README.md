@@ -228,3 +228,10 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
         // equals
         return 0;
       });
+
+*Otra solucion*
+
+      myArray.sort(function(a, b) {
+        return a-b;
+      });
+      Note:not working when sort date in such a format "mm/dd/yyyy"
