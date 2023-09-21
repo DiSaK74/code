@@ -211,9 +211,9 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       </div>
 
 # Test
-      ng test --progress front-spa-fln
+      ng test --progress front_spa_fln
       
-      Nota: front-spa-fln es el nombre que aparece en angular.json
+      Nota: front_spa_fln es el nombre que aparece en angular.json
 
 # SORT no ordena en Chrome
       // return obj.sort((a, b) => a[sortInformation.attribute] >= b[sortInformation.attribute]); //No funciona en Chrome
