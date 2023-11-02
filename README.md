@@ -212,6 +212,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
 # Test
       ng test --progress front_spa_fln
+      ng test --progress @bomultimodal/modules-configuration
       
       Nota: front_spa_fln es el nombre que aparece en angular.json
 
