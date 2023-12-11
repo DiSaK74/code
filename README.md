@@ -236,3 +236,8 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
         return a-b;
       });
       Note:not working when sort date in such a format "mm/dd/yyyy"
+
+# Backticks
+      const userInfo = `User info: ${name} ${surname} ${telephone}`;
+      const userInfo = `User info: ${user.getName()} ${user.getEmail()}`;
+      
