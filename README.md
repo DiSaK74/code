@@ -248,3 +248,4 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
             "regexNumericField": "/^[0-9]+$/",
             "notOnlyWhiteSpace": "^(?!\\s*$).+"
           },
+          defaultRegex = '^[0-9]+([.])?([0-9]+)?$'; //Numeros con decimales
