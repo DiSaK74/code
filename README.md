@@ -241,3 +241,10 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       const userInfo = `User info: ${name} ${surname} ${telephone}`;
       const userInfo = `User info: ${user.getName()} ${user.getEmail()}`;
       
+# Regex
+      "regex": {
+            "hour": "/^([0-1]?[0-9]|2[0-3])$/",
+            "minute": "/^([0-5]?[0-9])$/",
+            "regexNumericField": "/^[0-9]+$/",
+            "notOnlyWhiteSpace": "^(?!\\s*$).+"
+          },
