@@ -249,3 +249,6 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
             "notOnlyWhiteSpace": "^(?!\\s*$).+"
           },
           defaultRegex = '^[0-9]+([.])?([0-9]+)?$'; //Numeros con decimales
+
+          Desde JSON
+          "pattern": "^(([^<>()\\[\\]\\.,;:\\s@]+(\\.[^<>()\\[\\]\\.,;:\\s@]+)*)|(.+))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
