@@ -186,6 +186,11 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 *Hora actual de Israel en UTC "2023-04-12T17:37:02.000Z"*
 
       value = new Date(dateTemp).toISOString()
+
+*Pintar en pantalla una fecha desde Back
+      let dateMoment = moment().tz(timeZone);
+      dateMoment.set({ year: date.getFullYear(), month: date.getMonth(), date: date.getDate(), hour: date.getHours(), minutes: date.getMinutes(), seconds: date.getSeconds(), milliseconds: date.getMilliseconds() });
+      return dateMoment.toISOString();
       
 *Otras funciones*
 
@@ -213,6 +218,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 # Test
       ng test --progress front_spa_fln
       ng test --progress @bomultimodal/modules-configuration
+      ng test --progress @bomultimodal/modules-idi
       
       Nota: front_spa_fln es el nombre que aparece en angular.json
 
