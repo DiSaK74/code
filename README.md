@@ -186,8 +186,9 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 *Hora actual de Israel en UTC "2023-04-12T17:37:02.000Z"*
 
       value = new Date(dateTemp).toISOString()
+      
+*Adaptar fecha de pantalla a timezone de destino antes de enviar a Back
 
-*Pintar en pantalla una fecha desde Back
       let dateMoment = moment().tz(timeZone);
       dateMoment.set({ year: date.getFullYear(), month: date.getMonth(), date: date.getDate(), hour: date.getHours(), minutes: date.getMinutes(), seconds: date.getSeconds(), milliseconds: date.getMilliseconds() });
       return dateMoment.toISOString();
