@@ -36,7 +36,8 @@ codigos Javascript y Typescript
       o para un array let arrCopy = Object.assign([], arr); por lo que preferimos usarla siempre que podemos.
     
 # Clonado profundo array bidimensionales
-    this.listaTemporal = JSON.parse(JSON.stringify(this.lista)); // Clonado profundo para matrices bidimensionales
+    this.listaTemporal = JSON.parse(JSON.stringify(this.lista)); // Clonado profundo para matrices bidimensionales (CON FECHAS NO FUNCIONA)
+    this.tmpIntervals = _.cloneDeep(this.intervals) //Clonado profundo para arrays, objetos que contengan "FECHAS"
     
 https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/    
     
