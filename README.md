@@ -224,6 +224,11 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       
       Nota: front_spa_fln es el nombre que aparece en angular.json
 
+      Para deshabilitar un test se pone una 'x' delante de it
+      xit('should create', () => {
+          expect(component).toBeTruthy();
+      });
+
 # SORT no ordena en Chrome
       // return obj.sort((a, b) => a[sortInformation.attribute] >= b[sortInformation.attribute]); //No funciona en Chrome
       // Solución
