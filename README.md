@@ -266,3 +266,6 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
           Desde JSON (validate mail)
           "pattern": "^(([^<>()\\[\\]\\.,;:\\s@]+(\\.[^<>()\\[\\]\\.,;:\\s@]+)*)|(.+))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+
+# Snippets VSC
+      https://pablocianes.com/guardar-snippets-personalizados-en-visual-studio-code/
