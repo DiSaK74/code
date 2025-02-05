@@ -41,7 +41,8 @@ codigos Javascript y Typescript
     
 https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/    
     
-# Operador rest/spread
+# Operador Rest - Spread syntax (...)
+
 
       Cuando veamos "..." en el código, son los parámetros rest o el operador spread.
       Hay una manera fácil de distinguir entre ellos:
@@ -53,6 +54,15 @@ https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f
       
             Los parámetros rest son usados para crear funciones que acepten cualquier número de argumentos.
             El operador spread es usado para pasar un array a funciones que normalmente requieren una lista de muchos argumentos.
+
+                  function sum(x, y, z) {
+                    return x + y + z;
+                  }
+                  const numbers = [2, 3, 4];
+                  console.log(sum(1, ...numbers));
+                  // Expected output: 6
+                  console.log(sum.apply(null, numbers));
+                  // Expected output: 9
     
     
 # Mostrar un json usando *ngFor
