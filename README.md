@@ -51,8 +51,20 @@ https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f
             Cuando ... está en el llamado de una función o similar, se llama “operador spread” y expande un array en una lista.
             
       Patrones de uso:
-      
+
             Los parámetros rest son usados para crear funciones que acepten cualquier número de argumentos.
+
+                  // Usa rest para encerrar el resto de valores específicos proporcionados por el usuario en un arreglo:
+                  function miBio(primerNombre, apellido, ...otraInfo) { 
+                    return otraInfo;
+                  }
+                  
+                  // Invoca la función miBio pasando cinco argumentos a sus parámetros:
+                  miBio("Oluwatobi", "Sofela", "CodeSweetly", "Desarrollo Web", "Hombre");
+                  
+                  // La invocación anterior devolverá:
+                  ["CodeSweetly", "Desarrollo Web", "Hombre"]
+      
             El operador spread es usado para pasar un array a funciones que normalmente requieren una lista de muchos argumentos.
 
                   function sum(x, y, z) {
