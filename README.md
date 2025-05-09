@@ -191,15 +191,26 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
       Desde la libreria
       cd dist/PROJECT_NAME
-      npm link
+      npm link (package.json: "linklib": "copyLibAssets.sh && cd dist/bomultimodal/modules-rulesmanager && npm link",)
       
       Desde el proyecto
-      npm link LIBRARY_NAME
+      npm link LIBRARY_NAME (tal como aparece en el name del package.json de la libreria)
       
       Desde la libreria
-      npm run buildlib --watch
+      npm run buildlibwatch (package.json: "buildlibwatch": "ng build @bomultimodal/modules-rulesmanager --configuration=ivy --watch",)
       
       Fuente: https://dev.to/dontry/using-npm-link-in-angular9-11ie
+
+      copyLibAssets.sh
+      echo "-------------------------------------------------"
+      echo "Copying assets to library dist folder."
+      echo "-------------------------------------------------"
+      cp -R ./projects/bomultimodal/modules-rulesmanager/src/assets ./dist/bomultimodal/modules-rulesmanager
+      cd ./dist/bomultimodal/modules-rulesmanager
+      npm pack
+      echo "-------------------------------------------------"
+      echo "Finish"
+      echo "-------------------------------------------------"
       
 # Fechas
 *Hora actual en Israel "2023-04-12T20:37:02+03:00"*
