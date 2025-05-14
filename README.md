@@ -195,6 +195,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       
       Desde el proyecto
       npm link LIBRARY_NAME (tal como aparece en el name del package.json de la libreria)
+      Si queremos linkar dos simultaneamente (desde Angular v17) npm link @crecbomh48/modules-cases-management @crecbomh48/modules-invoice --force
       
       Desde la libreria
       npm run buildlibwatch (package.json: "buildlibwatch": "ng build @bomultimodal/modules-rulesmanager --configuration=ivy --watch",)
