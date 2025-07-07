@@ -1,6 +1,9 @@
 # code
 codigos Javascript y Typescript
 
+# ver version de angular en una app angular
+      window.getAllAngularRootElements && window.getAllAngularRootElements()[0].attributes[1]
+
 # Recorrer un objeto [Object]
 
       const lunch = this.formu.value;
