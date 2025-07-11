@@ -4,6 +4,9 @@ codigos Javascript y Typescript
 # ver version de angular en una app angular
       window.getAllAngularRootElements && window.getAllAngularRootElements()[0].attributes[1]
 
+# Crear una aplicacion angular con una version de angular/CLI concretra
+       npx @angular/cli@20 new basic20
+
 # Recorrer un objeto [Object]
 
       const lunch = this.formu.value;
