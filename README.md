@@ -267,6 +267,9 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       ng test --progress @crecbomh48/common-components
       npx ng test --project=@bomultimodal/modules-planner
       ng test --progress @bomultimodal/modules-planner
+
+      Test para un unico archivo
+      npm test -- --include='**/modal-copy-discount.component.spec.ts'
       
       Nota: front_spa_fln es el nombre que aparece en angular.json
 
