@@ -3,6 +3,8 @@ codigos Javascript y Typescript
 
 # eliminar node_modules rapidamente
       Remove-Item -Recurse -Force node_modules
+      Remove-Item -Recurse -Force -Path .\node_modules
+
       
 # ver version de angular en una app angular
       window.getAllAngularRootElements && window.getAllAngularRootElements()[0].attributes[1]
