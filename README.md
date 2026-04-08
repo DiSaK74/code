@@ -274,6 +274,7 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       npm test -- --include='**/modal-copy-discount.component.spec.ts'
       npm test projects/bomultimodal/modules-fare-management/src/lib/components/fares/discounts/[nombre-carpeta]/[nombre-archivo].spec.ts
       npm test projects/bomultimodal/modules-fare-management/src/lib/components/fares/discounts/copy-discount/modal-copy-discount.component.spec.ts
+      npx ng test @bomultimodal/common-components --watch=false --include="projects/bomultimodal/common-components/src/lib/components/search/search.component.spec.ts" --browsers=ChromeHeadless
       
       Nota: front_spa_fln es el nombre que aparece en angular.json
 
