@@ -233,14 +233,41 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
 
       value = new Date(dateTemp).toISOString()
       
+*Adaptar fecha de entrada a pantalla de salida
+
+```javascript
+      if (field.tag === 'datetime') {
+        // value = value ? new Date(value) : null;
+
+        // 1. Intl.DateTimeFormat aplica la zona horaria correctamente Ej: 2026-09-01T03:00:00Z (UTC) → 00:00:00 America/Sao_Paulo (UTC-3)
+        // 2. El resultado es un string en formato US Ej: "09/01/2026, 00:00:00"
+        // 3. Ese string sí es parseable por new Date(). Es formato MM/DD/YYYY, que sí entiende JavaScript. No es DD/MM/YYYY (que rompe el parseo)
+        const zonedString = new Intl.DateTimeFormat('en-US', {
+          timeZone: this.jsonBuild.timeZone,
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+        }).format(new Date(value));
+        // 4. Convertimos ese string a un Date real
+        value = new Date(zonedString);
+      }
+      control.setValue(value ?? null, { emitEvent: false });
+```
+      
 *Adaptar fecha de pantalla a timezone de destino antes de enviar a Back
 
+```javascript
       let dateMoment = moment().tz(timeZone);
       dateMoment.set({ year: date.getFullYear(), month: date.getMonth(), date: date.getDate(), hour: date.getHours(), minutes: date.getMinutes(), seconds: date.getSeconds(), milliseconds: date.getMilliseconds() });
       return dateMoment.toISOString();
+```
       
 *Otras funciones*
 
+```javascript
       let hora = moment(value).hour();
       let minute = moment(value).minute();
       value = moment(startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format();
@@ -254,13 +281,16 @@ https://www.npmjs.com/package/@ng-select/ng-select?activeTab=versions
       let hora = this.moment(element.startTime).hour();
       let minute = this.moment(element.startTime).minute();
       element.startTime = this.moment(element.startDate).tz(this.jsonBuild.timeZone).set("hour", hora).set("minute", minute).set("second", 0).format()
-      
+
+```
+```html
       <div>
         {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format :
         loadInterval.id ? getOffset(info.mappingToDTO, loadInterval[info.mappingToDTO]) : null) : '-' }}
         <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format : loadInterval.id ? '0120' : null) : '-' }}  -->
         <!-- {{ loadInterval[info.mappingToDTO] ? (loadInterval[info.mappingToDTO] | date : info.format) : '-' }}  -->
       </div>
+```
 
 # Test
       ng test --progress front_spa_fln
